@@ -1,20 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 <module name="Checker">
-	<module name="Header">
-		<property name="header" value="////////////////////////////////////////////////////////////////////
-// davide maria lazzaro 1162190
-////////////////////////////////////////////////////////////////////" />
-		<property name="fileExtensions" value="java" />
-	</module>
+<module name="TreeWalker">
 <module name="BooleanExpressionComplexity">
   <property name="max" value="7"/>
 </module>
 <module name="CyclomaticComplexity">
   <property name="max" value="15"/>
-</module>
-<module name="FileLength">
-  <property name="max" value="1500"/>
 </module>
 <module name="MethodLength">
   <property name="tokens" value="METHOD_DEF"/>
@@ -27,19 +19,26 @@
 <module name="EmptyCatchBlock">
   <property name="commentFormat" value="This is expected"/>
 </module>
-<module name="FileTabCharacter">
-  <property name="eachLine" value="true"/>
-</module>
 <module name="AvoidStarImport">
   <property name="excludes" value="java.io,java.net,java.lang.Math"/>
 </module>
 <module name="IllegalImport">
-  <property name="regexp" value="true"/>
-  <property name="illegalClasses"
-    value="^java\.util\.(List|Arrays), ^java\.sql\.Connection"/>
+  <property name="illegalPkgs" value="java.io, java.sql"/>
 </module>
 <module name="NeedBraces">
   <property name="tokens" value="LITERAL_CASE, LITERAL_DEFAULT"/>
   <property name="allowSingleLineStatement" value="true"/>
+</module>
+</module>
+<module name="FileLength">
+  <property name="max" value="1500"/>
+</module>
+<module name="Header">
+ <property name="header" value="////////////////////////////////////////////////////////////////////
+\n// Davide Maria Lazzaro 1162190\n
+////////////////////////////////////////////////////////////////////"/>
+</module>
+<module name="FileTabCharacter">
+  <property name="eachLine" value="true"/>
 </module>
 </module>

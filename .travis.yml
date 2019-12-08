@@ -1,13 +1,8 @@
-  dist: trusty
-
- ​group: edge
-
- ​language: java
-
- ​jdk: openjdk8
-
- ​cache:
-   ​directories:
-     ​- $HOME/.m2
- ​script:
-   ​- mvn clean install
+ --- 
+dist: trusty
+​cache: 
+  ​directories: "​- $HOME/.m2"
+​group: edge
+​jdk: openjdk8
+​language: java
+​script: "​- mvn clean install"

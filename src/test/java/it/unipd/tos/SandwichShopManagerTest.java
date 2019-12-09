@@ -34,6 +34,7 @@ public class SandwichShopManagerTest extends Assert {
         listaProva.clear();
     }
 
+   
     @Test
     public void getOrderTotalPriceTest() throws TakeAwayBillException {
         listaProva.add(primavera);
@@ -73,7 +74,7 @@ public class SandwichShopManagerTest extends Assert {
         listaProva.add(doppiaCarne);
         listaProva.add(doppiaCarne);
 
-        assertEquals(prova.getOrderPrice(listaProva), 53.55, 0.0);
+        assertEquals(prova.getOrderPrice(listaProva), 53.2, 0.0);
     }
     @Test(expected = TakeAwayBillException.class)
     public void OrderCannotExceed30Elements() throws TakeAwayBillException{

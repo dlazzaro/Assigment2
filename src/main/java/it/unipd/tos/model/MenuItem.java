@@ -13,9 +13,9 @@ public class MenuItem {
     private String name;
     private float prezzo;
 
-    public MenuItem(ItemType tipoitem, String nome, float prezzoitem) {
+    public MenuItem(ItemType tipoitem, String name, float prezzoitem) {
         this.tipo = tipoitem;
-        this.name = nome;
+        this.name = name;
         this.prezzo = prezzoitem;
     }
 

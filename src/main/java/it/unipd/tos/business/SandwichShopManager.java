@@ -26,7 +26,7 @@ public class SandwichShopManager implements TakeAwayBill {
             totale+=0.5;
         }
         
-        if (itemsOrdered.stream().mapToDouble(x -> x.getPrezzo()).sum() > 50.0) {
+        if (totale > 50.0) {
             totale -= totale * 0.1;
         }
         
